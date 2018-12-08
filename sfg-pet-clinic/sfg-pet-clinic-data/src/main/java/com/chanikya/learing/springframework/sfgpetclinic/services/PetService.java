@@ -1,12 +1,7 @@
 package com.chanikya.learing.springframework.sfgpetclinic.services;
 
-import java.util.Set;
+import com.chanikya.learing.springframework.sfgpetclinic.model.Pet;
 
-public interface PetService {
+public interface PetService extends CrudService<Pet, Long> {
 
-	PetService findById(long id);
-
-	Set<PetService> findAll();
-
-	PetService save(PetService pet);
 }
