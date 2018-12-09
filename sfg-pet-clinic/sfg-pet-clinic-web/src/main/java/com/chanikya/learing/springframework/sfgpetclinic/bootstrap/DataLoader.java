@@ -7,8 +7,6 @@ import com.chanikya.learing.springframework.sfgpetclinic.model.Owner;
 import com.chanikya.learing.springframework.sfgpetclinic.model.Vet;
 import com.chanikya.learing.springframework.sfgpetclinic.services.OwnerService;
 import com.chanikya.learing.springframework.sfgpetclinic.services.VetService;
-import com.chanikya.learing.springframework.sfgpetclinic.services.map.OwnerMapService;
-import com.chanikya.learing.springframework.sfgpetclinic.services.map.VetMapService;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -16,9 +14,10 @@ public class DataLoader implements CommandLineRunner {
 	private final OwnerService ownerService;
 	private final VetService vetService;
 
-	public DataLoader() {
-		ownerService = new OwnerMapService();
-		vetService = new VetMapService();
+	public DataLoader(OwnerService ownerService, VetService vetService) {
+		super();
+		this.ownerService = ownerService;
+		this.vetService = vetService;
 	}
 
 	@Override
