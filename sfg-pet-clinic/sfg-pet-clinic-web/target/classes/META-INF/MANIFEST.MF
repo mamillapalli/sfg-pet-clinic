@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: sfg-pet-clinic-web
+Implementation-Version: 0.0.2-SNAPSHOT
+Built-By: ravikant
+Implementation-Vendor-Id: com.chanikya.learing.springframework
+Build-Jdk: 1.8.0_102
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/sfg-pet-clinic/sfg-pet-clinic-web
+Created-By: Maven Integration for Eclipse
+
