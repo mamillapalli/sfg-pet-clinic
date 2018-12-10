@@ -1,1 +1,6 @@
+com\chanikya\learing\springframework\sfgpetclinic\controllers\OwnerController.class
+com\chanikya\learing\springframework\sfgpetclinic\controllers\PetController.class
+com\chanikya\learing\springframework\sfgpetclinic\controllers\IndexController.class
+com\chanikya\learing\springframework\sfgpetclinic\bootstrap\DataLoader.class
+com\chanikya\learing\springframework\sfgpetclinic\controllers\VetController.class
 com\chanikya\learing\springframework\sfgpetclinic\SfgPetClinicApplication.class
