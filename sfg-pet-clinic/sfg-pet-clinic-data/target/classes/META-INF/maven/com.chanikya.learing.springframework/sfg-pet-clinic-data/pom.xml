@@ -33,6 +33,9 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.junit/junit5-api -->
+<!-- https://mvnrepository.com/artifact/org.junit/junit5-engine -->
+
 	</dependencies>
 	<properties>
 		<spring-boot.repackage.skip>true</spring-boot.repackage.skip>

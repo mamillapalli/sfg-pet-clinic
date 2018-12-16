@@ -9,15 +9,13 @@ import com.chanikya.learing.springframework.sfgpetclinic.model.Vet;
 import com.chanikya.learing.springframework.sfgpetclinic.services.SpecialtiesService;
 import com.chanikya.learing.springframework.sfgpetclinic.services.VetService;
 
+import lombok.AllArgsConstructor;
+
 @Service
+@AllArgsConstructor
 public class VetMapService extends AbstractMapService<Vet, Long> implements VetService {
 
 	private final SpecialtiesService specialtiesService;
-
-	public VetMapService(SpecialtiesService specialtiesService) {
-		super();
-		this.specialtiesService = specialtiesService;
-	}
 
 	@Override
 	public Set<Vet> findAll() {

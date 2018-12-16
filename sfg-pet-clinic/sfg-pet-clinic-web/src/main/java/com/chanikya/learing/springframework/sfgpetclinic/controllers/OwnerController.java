@@ -6,16 +6,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.chanikya.learing.springframework.sfgpetclinic.services.OwnerService;
 
+import lombok.AllArgsConstructor;
+
 @Controller
 @RequestMapping("/owners")
+@AllArgsConstructor
 public class OwnerController {
 
 	OwnerService ownerService;
-
-	public OwnerController(OwnerService ownerService) {
-		super();
-		this.ownerService = ownerService;
-	}
 
 	@RequestMapping({ "", "/", "index", "index.htm", "index.html", "find" })
 	public String listOwners(Model model) {

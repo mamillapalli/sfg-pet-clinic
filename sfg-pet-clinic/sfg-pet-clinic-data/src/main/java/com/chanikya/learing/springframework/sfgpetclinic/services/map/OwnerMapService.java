@@ -10,16 +10,14 @@ import com.chanikya.learing.springframework.sfgpetclinic.services.OwnerService;
 import com.chanikya.learing.springframework.sfgpetclinic.services.PetService;
 import com.chanikya.learing.springframework.sfgpetclinic.services.PetTypeService;
 
+import lombok.AllArgsConstructor;
+
 @Service
+@AllArgsConstructor
 public class OwnerMapService extends AbstractMapService<Owner, Long> implements OwnerService {
 
 	private final PetTypeService petTypeService;
 	private final PetService petService;
-
-	public OwnerMapService(PetTypeService petTypeService, PetService petService) {
-		this.petTypeService = petTypeService;
-		this.petService = petService;
-	}
 
 	@Override
 	public Set<Owner> findAll() {
@@ -72,6 +70,12 @@ public class OwnerMapService extends AbstractMapService<Owner, Long> implements 
 	@Override
 	public Owner findByLastname(String lastName) {
 		// TODO Auto-generated method stub
+		Set<Owner> owners = this.findAll();
+		for (Owner owner2 : owners) {
+			if (owner2.getLastName().equalsIgnoreCase(lastName))
+				return owner2;
+
+		}
 		return null;
 	}
 
